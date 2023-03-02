@@ -38,10 +38,12 @@ function SearchBar() {
           <i className="bi-search"></i>
         </button>
       </form>
-      <ProductList
-        filteredSearchResults={filteredSearchResults}
-        product={products}
-      />
+      {searchOutput !== "" && (
+        <ProductList
+          filteredSearchResults={filteredSearchResults}
+          product={products}
+        />
+      )}
     </div>
   );
 }
