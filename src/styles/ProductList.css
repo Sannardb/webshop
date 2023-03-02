@@ -1,0 +1,14 @@
+.searchBar {
+  display: flex;
+  margin: 50px auto;
+  max-width: 400px;
+}
+
+.btn {
+  background-color: rgb(164, 201, 150);
+  border-style: none;
+}
+
+.btn:hover {
+  background-color: rgb(136, 168, 124);
+}
