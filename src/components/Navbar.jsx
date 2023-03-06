@@ -8,12 +8,12 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div>
+      <div className="homeLink">
         <Link to="/">
           <span>Outdoorsy</span>
         </Link>
       </div>
-      <div className="links">
+      <div className="cartLink">
         <Link to="/shoppingCart">
           <i className="bi-cart2"></i> {selectedProducts.length}
         </Link>

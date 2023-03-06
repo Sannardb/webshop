@@ -15,13 +15,14 @@ span {
   font-size: 30px;
 }
 
-.links {
+.cartLink {
   margin-right: 40px;
   display: flex;
   align-items: center;
 }
 
-.links a {
+.cartLink a,
+.homeLink a {
   text-decoration: none;
   color: white;
   margin-left: 20px;
