@@ -3,8 +3,10 @@ import "../styles/ProductItem.css";
 import { CartContext } from "./CartContext";
 
 function ProductItem(props) {
-  const { addToCart } = useContext(CartContext);
-  const { name, productNumber, price, image, description } = props.product;
+  const { addToCart, cartItems } = useContext(CartContext);
+  const { name, productNumber, price, image } = props.product;
+
+  const cartItemAmount = cartItems[productNumber];
 
   return (
     <div className="parentContainer">
@@ -17,11 +19,12 @@ function ProductItem(props) {
         <button
           className="addToCartBtn"
           onClick={() => {
-            addToCart(props.product);
+            addToCart(productNumber);
           }}
         >
           Add to Cart
         </button>
+        {cartItemAmount > 0 && <> items in cart: ({cartItemAmount})</>}
       </div>
     </div>
   );

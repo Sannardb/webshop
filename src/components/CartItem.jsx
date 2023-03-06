@@ -1,11 +1,11 @@
+import { useContext } from "react";
 import "../styles/CartItem.css";
+import { CartContext } from "./CartContext";
 
 function CartItem(props) {
-  const { name, productNumber, price, image, description } = props.product;
-
-  const removeFromCart = () => {
-    props.removeFromCart(props.product);
-  };
+  const { name, productNumber, price, image } = props.product;
+  const { cartItems, addToCart, removeFromCart, updateCartItemQuantity } =
+    useContext(CartContext);
 
   return (
     <div className="parentContainer">
@@ -18,14 +18,25 @@ function CartItem(props) {
       </div>
 
       <div className="quantity">
-        <button className="removeQuantity"> - </button>
-        <input />
-        <button className="addQuantity"> + </button>
+        <button
+          className="removeQuantity"
+          onClick={() => removeFromCart(productNumber)}
+        >
+          -
+        </button>
+        <input
+          value={cartItems[productNumber]}
+          onChange={(e) =>
+            updateCartItemQuantity(Number(e.target.value), productNumber)
+          }
+        />
+        <button
+          className="addQuantity"
+          onClick={() => addToCart(productNumber)}
+        >
+          +
+        </button>
       </div>
-
-      <button className="removeFromCartBtn" onClick={removeFromCart}>
-        Remove from Cart
-      </button>
     </div>
   );
 }

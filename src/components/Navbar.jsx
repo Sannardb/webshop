@@ -4,7 +4,7 @@ import { CartContext } from "./CartContext";
 import { useContext } from "react";
 
 function Navbar() {
-  const { selectedProducts } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
 
   return (
     <div className="navbar">
@@ -15,7 +15,7 @@ function Navbar() {
       </div>
       <div className="cartLink">
         <Link to="/shoppingCart">
-          <i className="bi-cart2"></i> {selectedProducts.length}
+          <i className="bi-cart2"></i> {cartItems.length}
         </Link>
       </div>
     </div>
