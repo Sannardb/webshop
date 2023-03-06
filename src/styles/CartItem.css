@@ -1,0 +1,42 @@
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  max-width: 400px;
+  margin-bottom: 100px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.addQuantity,
+.removeQuantity {
+  border-style: none;
+  background-color: rgb(181, 197, 161);
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+button:hover {
+  background-color: rgb(136, 168, 124);
+}
+
+.removeFromCartBtn {
+  width: 100px;
+  font-size: 10px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(179, 83, 83);
+}
+
+.removeFromCartBtn:hover {
+  background-color: rgb(255, 45, 45);
+}
+
+.productName {
+  font-weight: bold;
+  font-size: 25px;
+}

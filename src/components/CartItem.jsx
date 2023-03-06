@@ -1,10 +1,11 @@
-import { useContext } from "react";
-import "../styles/ProductItem.css";
-import { CartContext } from "./CartContext";
+import "../styles/CartItem.css";
 
-function ProductItem(props) {
-  const { addToCart } = useContext(CartContext);
+function CartItem(props) {
   const { name, productNumber, price, image, description } = props.product;
+
+  const removeFromCart = () => {
+    props.removeFromCart(props.product);
+  };
 
   return (
     <div className="parentContainer">
@@ -14,17 +15,19 @@ function ProductItem(props) {
         <div className="productPrice">{price} SEK</div>
         <div className="productInfo"></div>
         <img src={image} alt={name} />
-        <button
-          className="addToCartBtn"
-          onClick={() => {
-            addToCart(props.product);
-          }}
-        >
-          Add to Cart
-        </button>
       </div>
+
+      <div className="quantity">
+        <button className="removeQuantity"> - </button>
+        <input />
+        <button className="addQuantity"> + </button>
+      </div>
+
+      <button className="removeFromCartBtn" onClick={removeFromCart}>
+        Remove from Cart
+      </button>
     </div>
   );
 }
 
-export default ProductItem;
+export default CartItem;

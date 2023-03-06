@@ -1,20 +1,20 @@
-import SearchBar from "./components/SearchBar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { CartProvider } from "./components/CartContext";
+import Search from "./components/Search";
 import ShoppingCart from "./components/ShoppingCart";
 import Navbar from "./components/Navbar";
-import products from "./products.json";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Router> */}
-      <Navbar />
-      <SearchBar />
-      {/* <Routes> */}
-      {/* <Route path="/ShoppingCart" element={<ShoppingCart />} /> */}
-      {/* </Routes> */}
-      {/* </Router> */}
-    </div>
+    <CartProvider>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/shoppingCart" element={<ShoppingCart />} />
+          <Route path="/" element={<Search />} />
+        </Routes>
+      </div>
+    </CartProvider>
   );
 }
 

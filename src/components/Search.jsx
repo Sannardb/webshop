@@ -1,11 +1,13 @@
-import { useState } from "react";
-import "../styles/SearchBar.css";
+import { useContext, useState } from "react";
+import "../styles/Search.css";
 import products from "../products.json";
-import ProductList from "./ProductList";
+import ProductItem from "./ProductItem";
+import { CartContext } from "./CartContext";
 
-function SearchBar() {
+function Search() {
   const [searchInput, setSearchInput] = useState("");
   const [searchOutput, setSearchOutput] = useState("");
+  const { addToCart } = useContext(CartContext);
 
   const filteredSearchResults = products.filter((product) => {
     return (
@@ -38,14 +40,20 @@ function SearchBar() {
           <i className="bi-search"></i>
         </button>
       </form>
-      {searchOutput !== "" && (
-        <ProductList
-          filteredSearchResults={filteredSearchResults}
-          product={products}
-        />
-      )}
+
+      {searchOutput && filteredSearchResults.length === 0 ? (
+        <div className="noResultsFound">No results found.</div>
+      ) : null}
+
+      {searchOutput && filteredSearchResults.length > 0 ? (
+        <div className="products">
+          {filteredSearchResults.map((product, index) => (
+            <ProductItem product={product} key={index} addToCart={addToCart} />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 }
 
-export default SearchBar;
+export default Search;

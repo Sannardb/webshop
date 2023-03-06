@@ -1,70 +1,70 @@
 [
   {
     "name": "3-person Tunnel Tent G5",
-    "productNumber": "001",
+    "productNumber": 1,
     "price": 3295,
     "description": "Awesome tent",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1591946678/uploads/live_product_image/file/0/0/282/282419/urberg-3-person-tunnel-tent-g5-kombu-green.jpg"
   },
   {
     "name": "3-season Sleeping Bag G5",
-    "productNumber": "002",
+    "productNumber": 2,
     "price": 995,
     "description": "Warm sleepingbag",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1608628020/uploads/live_product_image/file/0/0/437/437306/urberg-3-season-sleeping-bag-g5-mallard-blue-midnight-navy.jpg"
   },
   {
     "name": "25-4 UL with Gas Burner",
-    "productNumber": "003",
+    "productNumber": 3,
     "price": 990,
     "description": "To cook awesome food!",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1557841433/uploads/live_product_image/file/0/0/144/144035/trangia-25-4-ul-with-gas-burner-onecolour.jpg"
   },
   {
     "name": "Twin Skin Pro",
-    "productNumber": "004",
+    "productNumber": 4,
     "price": 3495,
     "description": "Its unique design gives you a secure grip and glide in any snow conditions.",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1671750404/uploads/live_product_image/file/0/0/697/697112/fischer-twin-skin-pro-black-yellow.jpg"
   },
   {
     "name": "Tarp 11 Ultralight",
-    "productNumber": "005",
+    "productNumber": 5,
     "price": 1495,
     "description": "Super-light tarp that is practical to take with you on your hike",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1577141972/uploads/live_product_image/file/0/0/340/340819/sydvang-tarp-11-ultralight-green.jpg"
   },
   {
     "name": "Rook 50",
-    "productNumber": "006",
+    "productNumber": 6,
     "price": 1139,
     "description": "A very comfortable and close to the body backpack from Osprey",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1562055897/uploads/live_product_image/file/0/0/241/241815/osprey-rook-50-mallard-green.jpg"
   },
   {
     "name": "Feuerhand 276 Zink",
-    "productNumber": "007",
+    "productNumber": 7,
     "price": 341,
     "description": "A kerosene lamp that provides a pleasant warm light and also some heat.",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1628027974/uploads/live_product_image/file/0/0/216/216808/feuerhand-feuerhand-276-zink-zinc-plated.jpg"
   },
   {
     "name": "Men's Quest 4 Gore-Tex",
-    "productNumber": "008",
+    "productNumber": 8,
     "price": 1719,
     "description": "Designed for long expeditions and tough conditions",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1652347198/uploads/live_product_image/file/0/0/437/437665/salomon-men-s-quest-4-gore-tex-olive-night.jpg"
   },
   {
     "name": "Compact Hammock",
-    "productNumber": "009",
+    "productNumber": 9,
     "price": 395,
     "description": "Comfortable and versatile shorts for everyday wear.",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1557859991/uploads/live_product_image/file/0/0/279/279183/ticket-to-the-moon-compact-hammock-army-green.jpg"
   },
   {
     "name": "X-7B Underwater Camera",
-    "productNumber": "010",
+    "productNumber": 10,
     "price": 4495,
     "description": "A recordable underwater camera from iFish that can also take still images",
     "image": "https://static.outnorth.com/image/upload/b_white,c_lpad,d_no_image_chlzht.png,f_auto,fl_lossy,h_1200,q_auto,w_1200/v1582879186/uploads/live_product_image/file/0/0/329/329670/ifish-x-7b-underwater-camera-nocolour.jpg"
