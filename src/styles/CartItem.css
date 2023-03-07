@@ -1,8 +1,10 @@
 .parentContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 50px;
-  max-width: 400px;
+  max-width: 300px;
   margin-bottom: 100px;
 }
 
@@ -22,18 +24,6 @@ img {
 
 button:hover {
   background-color: rgb(136, 168, 124);
-}
-
-.removeFromCartBtn {
-  width: 100px;
-  font-size: 10px;
-  border-style: none;
-  border-radius: 10px;
-  background-color: rgb(179, 83, 83);
-}
-
-.removeFromCartBtn:hover {
-  background-color: rgb(255, 45, 45);
 }
 
 .productName {

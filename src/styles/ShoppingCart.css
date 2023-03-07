@@ -1,0 +1,27 @@
+.continueShop {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(67, 99, 63);
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+}
+
+.continueShop a {
+  text-decoration: none;
+  color: black;
+}
+
+.totalPrice {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.cartName {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
