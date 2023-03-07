@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import "../styles/Search.css";
 import products from "../products.json";
 import ProductItem from "./ProductItem";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
 
 function Search() {
   const [searchInput, setSearchInput] = useState("");

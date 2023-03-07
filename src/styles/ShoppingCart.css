@@ -2,12 +2,16 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  margin-left: 45%;
   background-color: rgb(192, 197, 186);
   padding: 5px;
   width: 155px;
   border: none;
   border-radius: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .continueShop a {

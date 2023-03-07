@@ -1,6 +1,6 @@
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
 import { useContext } from "react";
 
 function Navbar() {

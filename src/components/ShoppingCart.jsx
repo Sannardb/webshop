@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
 import products from "../products.json";
@@ -42,8 +42,10 @@ function ShoppingCart() {
       ) : (
         <div className="emptyCart">Your cart is empty</div>
       )}
-      <div className="continueShop">
-        <Link to="/">Continue Shopping</Link>
+      <div className="buttonContainer">
+        <div className="continueShop">
+          <Link to="/">Continue Shopping</Link>
+        </div>
       </div>
     </div>
   );

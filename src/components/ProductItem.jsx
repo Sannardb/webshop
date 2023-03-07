@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "../styles/ProductItem.css";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../CartContext";
 import { Link } from "react-router-dom";
 
 function ProductItem(props) {
