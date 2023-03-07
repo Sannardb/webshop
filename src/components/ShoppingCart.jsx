@@ -37,7 +37,11 @@ function ShoppingCart() {
           );
         })}
       </div>
-      <div className="totalPrice">Total price: {totalPrice} SEK </div>
+      {totalPrice > 0 ? (
+        <div className="totalPrice">Total price: {totalPrice} SEK </div>
+      ) : (
+        <div className="emptyCart">Your cart is empty</div>
+      )}
       <div className="continueShop">
         <Link to="/">Continue Shopping</Link>
       </div>

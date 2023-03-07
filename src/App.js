@@ -3,6 +3,7 @@ import { CartProvider } from "./components/CartContext";
 import Search from "./components/Search";
 import ShoppingCart from "./components/ShoppingCart";
 import Navbar from "./components/Navbar";
+import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/shoppingCart" element={<ShoppingCart />} />
           <Route path="/" element={<Search />} />
+          <Route path="/modal/:productNumber" element={<Modal />} />
         </Routes>
       </div>
     </CartProvider>

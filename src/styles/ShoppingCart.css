@@ -1,8 +1,11 @@
 .continueShop {
   display: flex;
   justify-content: center;
-  background-color: rgb(67, 99, 63);
-  width: 150px;
+  margin-top: 50px;
+  margin-left: 45%;
+  background-color: rgb(192, 197, 186);
+  padding: 5px;
+  width: 155px;
   border: none;
   border-radius: 10px;
 }
@@ -10,6 +13,10 @@
 .continueShop a {
   text-decoration: none;
   color: black;
+}
+
+.continueShop:hover {
+  background-color: rgb(178, 196, 171);
 }
 
 .totalPrice {
@@ -24,4 +31,9 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.emptyCart {
+  display: flex;
+  justify-content: center;
 }

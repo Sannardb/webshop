@@ -17,9 +17,9 @@ img {
 .removeQuantity {
   border-style: none;
   background-color: rgb(181, 197, 161);
-  border-radius: 10px;
+  border-radius: 5px;
   height: 30px;
-  width: 30px;
+  width: 25px;
 }
 
 button:hover {
@@ -29,4 +29,8 @@ button:hover {
 .productName {
   font-weight: bold;
   font-size: 25px;
+}
+
+input {
+  width: 50px;
 }
