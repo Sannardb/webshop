@@ -1,28 +1,3 @@
-.continueShop {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  background-color: rgb(192, 197, 186);
-  padding: 5px;
-  width: 155px;
-  border: none;
-  border-radius: 10px;
-}
-
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.continueShop a {
-  text-decoration: none;
-  color: black;
-}
-
-.continueShop:hover {
-  background-color: rgb(178, 196, 171);
-}
-
 .totalPrice {
   display: flex;
   font-size: 20px;
@@ -33,11 +8,7 @@
 .cartName {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.emptyCart {
-  display: flex;
-  justify-content: center;
+  font-size: 15px;
+  font-weight: bold;
 }

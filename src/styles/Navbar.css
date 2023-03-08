@@ -2,7 +2,7 @@
   width: 100%;
   height: 50px;
   padding-bottom: 50px;
-  background-color: rgb(150, 168, 138);
+  background-color: rgb(193, 209, 196);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,12 +13,6 @@ span {
   color: white;
   font-weight: bolder;
   font-size: 30px;
-}
-
-.cartLink {
-  margin-right: 40px;
-  display: flex;
-  align-items: center;
 }
 
 .cartLink a,

@@ -1,8 +1,9 @@
-.parentContainer {
+.parentProductContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 50px;
-
+  width: 100%;
   margin-bottom: 100px;
 }
 
@@ -13,7 +14,7 @@ img {
 
 .addToCartBtn {
   border-style: none;
-  background-color: rgb(181, 197, 161);
+  background-color: rgb(193, 209, 196);
   border-radius: 10px;
   height: 30px;
   width: 100px;
@@ -26,4 +27,20 @@ img {
 .productName {
   font-weight: bold;
   font-size: 25px;
+}
+
+.info {
+  background-color: rgb(250, 250, 250);
+}
+
+.infoBtn {
+  border: none;
+  background-color: white;
+  padding: 0;
+  color: rgb(202, 147, 147);
+}
+
+.infoBtn:hover {
+  background-color: white;
+  color: black;
 }

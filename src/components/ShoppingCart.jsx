@@ -1,6 +1,5 @@
 import { useContext, useState, useEffect } from "react";
 import { CartContext } from "../CartContext";
-import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
 import products from "../products.json";
 import "../styles/ShoppingCart.css";
@@ -26,7 +25,7 @@ function ShoppingCart() {
   return (
     <div className="shoppingCart">
       <div className="cartName">
-        <h1>Shopping cart</h1>
+        <div>Shopping cart</div>
       </div>
       <div className="cartItems">
         {products.map((product, index) => {
@@ -42,11 +41,6 @@ function ShoppingCart() {
       ) : (
         <div className="emptyCart">Your cart is empty</div>
       )}
-      <div className="buttonContainer">
-        <div className="continueShop">
-          <Link to="/">Continue Shopping</Link>
-        </div>
-      </div>
     </div>
   );
 }

@@ -1,24 +1,35 @@
-import { useContext } from "react";
-import "../styles/ProductItem.css";
+import { useContext, useState } from "react";
 import { CartContext } from "../CartContext";
-import { Link } from "react-router-dom";
+import "../styles/ProductItem.css";
 
 function ProductItem(props) {
-  const { addToCart, cartItems } = useContext(CartContext);
-  const { name, productNumber, price, image } = props.product;
-
-  const cartItemAmount = cartItems[productNumber];
+  const { addToCart } = useContext(CartContext);
+  const { name, productNumber, price, image, description } = props.product;
+  const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <div className="parentContainer">
+    <div className="parentProductContainer">
       <div className="productItem">
         <div className="productName">{name}</div>
-        <div className="productNumber">Product number: {productNumber}</div>
         <div className="productPrice">{price} SEK</div>
         <div className="productInfo">
-          <Link to={`/modal/${productNumber}`}>More information</Link>
+          <button className="infoBtn" onClick={() => setShowInfo(!showInfo)}>
+            {/* when btn is clicked, showInfo is updated to the opposite value */}
+            More information
+          </button>
+          <div className="info">
+            {/* if showInfo is true, render div */}
+            {showInfo && (
+              <div>
+                Product number: {productNumber}
+                <br />
+                Description: {description}
+              </div>
+            )}
+          </div>
         </div>
         <img src={image} alt={name} />
+        {/*  */}
         <button
           className="addToCartBtn"
           onClick={() => {
@@ -27,9 +38,7 @@ function ProductItem(props) {
         >
           Add to Cart
         </button>
-        {cartItemAmount > 0 && <> items in cart: ({cartItemAmount})</>}
       </div>
-      <div className="info"></div>
     </div>
   );
 }

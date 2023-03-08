@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(230, 230, 230);
+  width: 20%;
+  margin-top: 10px;
+  padding-top: 10px;
+  height: auto;
+}
+
+.search {
+  width: 80%;
+}

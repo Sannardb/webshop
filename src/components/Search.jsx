@@ -16,6 +16,7 @@ function Search() {
     );
   });
 
+  // gives the elements value, the input field
   const handleInputChange = (e) => {
     setSearchInput(e.target.value);
   };
@@ -41,10 +42,12 @@ function Search() {
         </button>
       </form>
 
-      {searchOutput && filteredSearchResults.length === 0 ? (
+      {/* if filteredSearchResults length is 0, render no results div */}
+      {filteredSearchResults.length === 0 ? (
         <div className="noResultsFound">No results found.</div>
       ) : null}
 
+      {/* if the searchOutput and filteredSearchResults length is bigger than 0, render product results */}
       {searchOutput && filteredSearchResults.length > 0 ? (
         <div className="products">
           {filteredSearchResults.map((product, index) => (

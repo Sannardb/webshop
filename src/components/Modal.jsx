@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Modal() {
   const { productNumber } = useParams();
-  const productIndex = productNumber - 1;
+  const productIndex = productNumber - 1; // because the index starts w 0
   const product = products[productIndex];
 
   return (

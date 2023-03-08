@@ -1,20 +1,23 @@
-import { Routes, Route } from "react-router-dom";
 import { CartProvider } from "./CartContext";
 import Search from "./components/Search";
 import ShoppingCart from "./components/ShoppingCart";
 import Navbar from "./components/Navbar";
-import Modal from "./components/Modal";
+import "./App.css";
 
 function App() {
   return (
     <CartProvider>
       <div className="App">
         <Navbar />
-        <Routes>
-          <Route path="/shoppingCart" element={<ShoppingCart />} />
-          <Route path="/" element={<Search />} />
-          <Route path="/modal/:productNumber" element={<Modal />} />
-        </Routes>
+        <div className="wrapper">
+          <div className="search">
+            <Search />
+          </div>
+          <div className="cart">
+            <ShoppingCart />
+          </div>
+        </div>
+        {/* <Route path="/modal/:productNumber" element={<Modal />} /> */}
       </div>
     </CartProvider>
   );
